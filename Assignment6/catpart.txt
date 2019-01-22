@@ -1,0 +1,57 @@
+# Command Line Arguments
+
+  From Command:
+    Empty String.                       [error]
+    Alphanumeric (including spaces and symbols).
+
+  To Command:
+    Empty String.       #Empty String is valid; will "delete" word
+    Alphanumeric (including spaces and symbols).
+
+  --:
+    Exists.                             [property --exists]
+    Does Not Exist.                     [error]
+
+  Double Dash Position:
+    Correct Position.                   [if --exists]
+    Incorrect Position.                 [if --exists][error]
+
+
+# Operations
+
+  -b:
+    Applied.
+    Not Applied.                        [property bna]
+
+  -f:
+    Applied.
+    Not Applied.                        [property fna]
+
+  -l:
+    Applied.
+    Not applied.                        [property lna]
+
+  -i:
+    Applied.
+    Not Applied.                        [property ina]
+
+  Occurrences of a single OPT:
+    >1.                                 [error]
+    0.                                  [if bna && fna && lna && ina][single]
+    1.
+
+
+# File
+
+  File Size:
+    0.                                  [error]
+    >1.
+
+  File Name:
+    Present.                            [property fileExists]
+    Empty.                              [error]
+
+  Number of Files:
+    0.                                  [error]
+    1.                                  [if fileExists]
+    >1.                                 [if fileExists]

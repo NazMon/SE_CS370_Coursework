@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context="tipcalculator.seclass.qc.edu.tipcalculator.TipCalculatorActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:text="@string/check_amount" />
+            <EditText
+                android:id="@+id/checkAmountValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:text="@string/party_size" />
+            <EditText
+                android:id="@+id/partySizeValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCompute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMPUTE TIP"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:text="Tip: "
+                android:textStyle="bold"
+                android:textSize="10pt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:text="15%" />
+            <EditText
+                android:id="@+id/fifteenPercentTipValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:text="20%" />
+            <EditText
+                android:id="@+id/twentyPercentTipValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:text="25%" />
+            <EditText
+                android:id="@+id/twentyfivePercentTipValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="Total: "
+                android:textStyle="bold"
+                android:textSize="10pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:text="15%" />
+            <EditText
+                android:id="@+id/fifteenPercentTotalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:text="20%" />
+            <EditText
+                android:id="@+id/twentyPercentTotalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:text="25%" />
+            <EditText
+                android:id="@+id/twentyfivePercentTotalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
